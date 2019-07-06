@@ -29,7 +29,9 @@ render() {
     return (
         <div className='Pokecard'>
             <h2 className='Pokecard-name'>{this.props.name}</h2>
-            <img src={imageLink} className='Pokecard-img' />
+            <div className='Pokecard-image' >
+                <img src={imageLink} alt={this.props.name} />
+            </div>
             <h3 className='Pokecard-type'>{this.props.type}</h3>
             <div className='Pokecard-exp'>EXP: {this.props.base_experience}</div>
         </div>
